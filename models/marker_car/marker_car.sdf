@@ -21,6 +21,17 @@
             <size>1.0 0.5 0.1</size>
           </box>
         </geometry>
+        <surface>
+          <contact>
+            <ode>
+              <min_depth>0.001</min_depth>
+              <max_vel>0</max_vel>
+            </ode>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
       </collision>
       <visual name="visual">
         <geometry>
@@ -35,6 +46,7 @@
           </script>
         </material>
       </visual>
+
     </link>
 
     <link name="wheel_front_left">
@@ -57,6 +69,24 @@
             <length>0.08</length>
           </cylinder>
         </geometry>
+        <max_contacts>1</max_contacts>
+          <surface>
+            <friction>
+              <ode>
+                <mu>1.0</mu>
+                <mu2>1.0</mu2>
+                <fdir1>0 0 1</fdir1>
+                <slip1>0.0</slip1>
+                <slip2>0.0</slip2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <min_depth>0.005</min_depth>
+                <kp>1e8</kp>
+              </ode>
+            </contact>
+          </surface>
       </collision>
       <visual name="visual">
         <geometry>
@@ -101,6 +131,24 @@
             <length>0.08</length>
           </cylinder>
         </geometry>
+        <max_contacts>1</max_contacts>
+          <surface>
+            <friction>
+              <ode>
+                <mu>1.0</mu>
+                <mu2>1.0</mu2>
+                <fdir1>0 0 1</fdir1>
+                <slip1>0.0</slip1>
+                <slip2>0.0</slip2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <min_depth>0.005</min_depth>
+                <kp>1e8</kp>
+              </ode>
+            </contact>
+          </surface>
       </collision>
       <visual name="visual">
         <geometry>
@@ -145,6 +193,24 @@
             <length>0.08</length>
           </cylinder>
         </geometry>
+        <max_contacts>1</max_contacts>
+          <surface>
+            <friction>
+              <ode>
+                <mu>1.0</mu>
+                <mu2>1.0</mu2>
+                <fdir1>0 0 1</fdir1>
+                <slip1>0.0</slip1>
+                <slip2>0.0</slip2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <min_depth>0.005</min_depth>
+                <kp>1e8</kp>
+              </ode>
+            </contact>
+          </surface>
       </collision>
       <visual name="visual">
         <geometry>
@@ -189,6 +255,24 @@
             <length>0.08</length>
           </cylinder>
         </geometry>
+        <max_contacts>1</max_contacts>
+          <surface>
+            <friction>
+              <ode>
+                <mu>1.0</mu>
+                <mu2>1.0</mu2>
+                <fdir1>0 0 1</fdir1>
+                <slip1>0.0</slip1>
+                <slip2>0.0</slip2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <min_depth>0.005</min_depth>
+                <kp>1e8</kp>
+              </ode>
+            </contact>
+          </surface>
       </collision>
       <visual name="visual">
         <geometry>
@@ -226,7 +310,8 @@
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://marker_car/meshes/marker.dae</uri>
+            <!-- <uri>model://marker_car/meshes/marker.dae</uri> -->
+            <uri>model://marker_car/meshes/apriltag.dae</uri>
           </mesh>
         </geometry>
       </visual>
