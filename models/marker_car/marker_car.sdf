@@ -299,7 +299,7 @@
 
 
     <link name="target_link">
-      <pose>0 0 0.2 0 0 0</pose>
+      <pose>0 0 0.2 0 0 1.57</pose>
       <collision name="collision">
         <geometry>
           <box>
@@ -310,8 +310,12 @@
       <visual name="visual">
         <geometry>
           <mesh>
+<<<<<<< HEAD
             <!-- <uri>model://marker_car/meshes/marker.dae</uri> -->
             <uri>model://marker_car/meshes/apriltag.dae</uri>
+=======
+            <uri>model://marker_car/meshes/AprilTag_36h11(6x6).dae</uri>
+>>>>>>> eda872a... 修改了二维码车模型,添加了iris_feima作为仿真无人机gazebo模型
           </mesh>
         </geometry>
       </visual>
@@ -323,6 +327,5 @@
         <xyz>0 0 0.12</xyz>
       </axis>
     </joint>
-
   </model>
 </sdf>

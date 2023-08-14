@@ -1,6 +1,6 @@
 <?xml version='1.0'?>
 <sdf version='1.6'>
-    <model name='fpv_cam'>
+  <model name='fpv_cam'>
     <pose>-0.158979 -0.04405 0.045074 0 -0 0</pose>
       <link name='link'>
         <inertial>
@@ -75,11 +75,20 @@
             <updateRate>30.0</updateRate>
             <cameraName>usb_cam</cameraName>
             <frameName>/robot_camera_link</frameName>
+<<<<<<< HEAD
             <CxPrime>320.5</CxPrime>
             <Cx>1920.5</Cx>
             <Cy>1080.5</Cy>
             <!-- <Cx>320.5</Cx>
             <Cy>240.5</Cy> -->
+=======
+            <!-- <CxPrime>320.5</CxPrime>
+            <Cx>320.5</Cx>
+            <Cy>240.5</Cy> -->
+            <CxPrime>160</CxPrime>
+            <Cx>160</Cx>
+            <Cy>120</Cy>
+>>>>>>> eda872a... 修改了二维码车模型,添加了iris_feima作为仿真无人机gazebo模型
             <hackBaseline>0</hackBaseline>
             <focalLength>277.191356</focalLength>
             <distortionK1>0.0</distortionK1>
@@ -91,7 +100,7 @@
           <!-- GStreamer camera plugin (needs a lot of CPU! Consider lowering the
              camera image size) -->
           <plugin name="GstCameraPlugin" filename="libgazebo_gst_camera_plugin.so">
-            <robotNamespace></robotNamespace>
+            <robotNamespace>camera</robotNamespace>
             <udpPort>5600</udpPort>
           </plugin>
         </sensor>
